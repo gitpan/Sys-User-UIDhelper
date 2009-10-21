@@ -9,11 +9,11 @@ Sys::User::UIDhelper - Helps for locating free UIDs.
 
 =head1 VERSION
 
-Version 0.0.0
+Version 0.0.1
 
 =cut
 
-our $VERSION = '0.0.0';
+our $VERSION = '0.0.1';
 
 
 =head1 SYNOPSIS
@@ -85,7 +85,7 @@ sub new {
 	#new users
 	$self->{min}=1000;
 	if (defined($args{min})) {
-		$self->{max}=$args{min};
+		$self->{min}=$args{min};
 	}
 
 	return $self;
